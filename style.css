@@ -1,0 +1,125 @@
+@font-face {
+    font-family: matrix;
+    src: url(fonts/matrix.ttf);
+}
+:root{
+    --cor-primaria:white;
+    --cor-secundaria: #f6f6f6;
+
+    --fonte-principal: "matrix", sans-serif;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(img/matrix-code-.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.cabecalho{
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabecalho h1{
+    color: white;
+}
+.cabecalho img{
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+.conteiner__input{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 0 4%;
+}
+.conteiner__input .imput{
+    width: 400px;
+    height: 330px;
+}
+#input__texto{
+    width: 500px;
+    height: 400px;
+    font-size: 20px;
+    color: var(--cor-primaria);
+    background: transparent;
+    box-shadow: inset;
+    border: 0;
+    padding: 10px;
+    text-transform: LowerCase;
+}
+#output{
+    display:flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    margin-right: 3%;
+}
+
+#output h2{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-primaria);
+
+}
+#output span{
+    color: var(--cor-primaria);
+    
+}
+#output span{
+    font-size: 16px;
+    text-align: center;
+}
+#output img{
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+
+}
+.container__btn button{
+    border-radius: 90px;
+    color:var(--cor-primaria);
+    border-radius:90px;
+    width: 150px;
+    height: 30px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+.bnt-copiar{
+    border-radius: 90px;
+    color:var(--cor-primaria);
+    border-radius:90px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+
+.btn__criptografar{
+    background-color: rgb(221, 5, 5);
+}
+.btn__descriptografar{
+    background-color: blue;
+}
+.container__btn button:hover{
+    border-color: 20px solid var(--cor-primaria);
+    transition: 0.5s all;
+}
+.alerta{
+    color: var(--cor-primaria);
+}
